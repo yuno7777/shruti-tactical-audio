@@ -1,0 +1,17 @@
+experiment_name: "pilot_gtcrn_defence"
+seed: 42
+
+training:
+  epochs: 3
+  batch_size: 4
+  learning_rate: 1.0e-4
+  segment_length_s: 3.0
+  device: "cpu"
+  checkpoint_dir: "checkpoints/fine_tuned"
+  pretrained_checkpoint: "checkpoints/model_trained_on_dns3.tar"
+
+dataset:
+  train_manifest: "data/train/manifest.json"
+  val_defence_manifest: "data/val_defence/manifest.json"
+  val_general_manifest: "data/val_general/manifest.json"
+  stress_manifest: "data/stress_test/manifest.json"

@@ -1,0 +1,44 @@
+# Baseline Configuration for GTCRN Speech Enhancement Pipeline
+experiment_name: "baseline_gtcrn_dns3"
+seed: 42
+
+model:
+  name: "GTCRN"
+  checkpoint: "checkpoints/model_trained_on_dns3.tar"
+  sample_rate: 16000
+  n_fft: 512
+  hop_size: 256
+  win_size: 512
+  frequency_bins: 257
+  erb_subbands: 129
+  hidden_channels: 16
+  params_k: 48.2
+  macs_per_sec: "33.0 MMACs"
+
+deployment:
+  target_device: "Raspberry Pi (CPU-only, no GPU)"
+  ram_target: "< 1 GB"
+  max_system_latency_target_ms: 30.0
+  chunk_frames: 1
+  chunk_duration_ms: 16.0
+  algorithmic_buffer_latency_ms: 16.0
+
+evaluation:
+  metrics: ["pesq", "stoi", "sisdr", "snr", "rtf", "latency"]
+  test_snr_levels_db: [-5, 0, 5, 10, 15, 20]
+
+datasets:
+  sih_repository: "Panav-Payappagoudar/sih-26-processed-audio"
+  recommended_subsets:
+    - name: "Drone-Noise-Audio-set"
+      size_mb: 18.7
+      type: "defence_noise"
+    - name: "Vehicle-Engine-Wind-Electronic-Electrical-Noise"
+      size_mb: 229.5
+      type: "defence_noise"
+    - name: "firearms-audio-dataset-contains-58-guntypes"
+      size_mb: 20.1
+      type: "impulse_stress_test"
+    - name: "LibriSpeech"
+      size_mb: 969.9
+      type: "clean_speech"

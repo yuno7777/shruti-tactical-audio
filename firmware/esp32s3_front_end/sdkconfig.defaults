@@ -1,0 +1,15 @@
+# ESP32-S3 High-Performance Audio Configuration
+CONFIG_IDF_TARGET="esp32s3"
+
+# CPU Frequency: 240 MHz for sub-millisecond DSP
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240=y
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ=240
+
+# FreeRTOS 1000 Hz tick rate (1 ms resolution)
+CONFIG_FREERTOS_HZ=1000
+
+# Compiler optimization for performance
+CONFIG_COMPILER_OPTIMIZATION_PERF=y
+
+# High-Speed UART support
+CONFIG_UART_ISR_IN_IRAM=y

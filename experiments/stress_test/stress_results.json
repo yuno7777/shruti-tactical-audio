@@ -1,0 +1,152 @@
+[
+  {
+    "test_id": 0,
+    "noise_type": "firearms_impulse",
+    "input_snr": 0.0,
+    "direct_gtcrn": {
+      "sisdr_db": 11.34,
+      "pesq": 1.618,
+      "max_amplitude": 0.6614729762077332
+    },
+    "esp32_plus_gtcrn": {
+      "sisdr_db": 11.21,
+      "pesq": 1.605,
+      "max_amplitude": 0.5496584177017212
+    }
+  },
+  {
+    "test_id": 1,
+    "noise_type": "firearms_impulse",
+    "input_snr": 0.0,
+    "direct_gtcrn": {
+      "sisdr_db": 10.21,
+      "pesq": 1.393,
+      "max_amplitude": 0.4938472509384155
+    },
+    "esp32_plus_gtcrn": {
+      "sisdr_db": 10.2,
+      "pesq": 1.394,
+      "max_amplitude": 0.4815344214439392
+    }
+  },
+  {
+    "test_id": 2,
+    "noise_type": "firearms_impulse",
+    "input_snr": -5.0,
+    "direct_gtcrn": {
+      "sisdr_db": 5.02,
+      "pesq": 1.255,
+      "max_amplitude": 0.4212101995944977
+    },
+    "esp32_plus_gtcrn": {
+      "sisdr_db": 5.14,
+      "pesq": 1.265,
+      "max_amplitude": 0.42123016715049744
+    }
+  },
+  {
+    "test_id": 3,
+    "noise_type": "firearms_impulse",
+    "input_snr": 0.0,
+    "direct_gtcrn": {
+      "sisdr_db": 9.67,
+      "pesq": 1.503,
+      "max_amplitude": 0.7289488911628723
+    },
+    "esp32_plus_gtcrn": {
+      "sisdr_db": 9.62,
+      "pesq": 1.504,
+      "max_amplitude": 0.532507061958313
+    }
+  },
+  {
+    "test_id": 4,
+    "noise_type": "firearms_impulse",
+    "input_snr": 0.0,
+    "direct_gtcrn": {
+      "sisdr_db": 9.61,
+      "pesq": 1.542,
+      "max_amplitude": 0.36268410086631775
+    },
+    "esp32_plus_gtcrn": {
+      "sisdr_db": 9.61,
+      "pesq": 1.542,
+      "max_amplitude": 0.36268410086631775
+    }
+  },
+  {
+    "test_id": 5,
+    "noise_type": "firearms_impulse",
+    "input_snr": -5.0,
+    "direct_gtcrn": {
+      "sisdr_db": 12.66,
+      "pesq": 1.381,
+      "max_amplitude": 0.18281033635139465
+    },
+    "esp32_plus_gtcrn": {
+      "sisdr_db": 12.68,
+      "pesq": 1.373,
+      "max_amplitude": 0.25512275099754333
+    }
+  },
+  {
+    "test_id": 6,
+    "noise_type": "firearms_impulse",
+    "input_snr": 0.0,
+    "direct_gtcrn": {
+      "sisdr_db": 7.8,
+      "pesq": 1.322,
+      "max_amplitude": 0.5079259276390076
+    },
+    "esp32_plus_gtcrn": {
+      "sisdr_db": 7.8,
+      "pesq": 1.323,
+      "max_amplitude": 0.4973900020122528
+    }
+  },
+  {
+    "test_id": 7,
+    "noise_type": "firearms_impulse",
+    "input_snr": 0.0,
+    "direct_gtcrn": {
+      "sisdr_db": 9.58,
+      "pesq": 1.308,
+      "max_amplitude": 0.6652465462684631
+    },
+    "esp32_plus_gtcrn": {
+      "sisdr_db": 9.56,
+      "pesq": 1.307,
+      "max_amplitude": 0.588134765625
+    }
+  },
+  {
+    "test_id": 8,
+    "noise_type": "firearms_impulse",
+    "input_snr": 0.0,
+    "direct_gtcrn": {
+      "sisdr_db": 7.42,
+      "pesq": 1.221,
+      "max_amplitude": 0.4235479235649109
+    },
+    "esp32_plus_gtcrn": {
+      "sisdr_db": 7.12,
+      "pesq": 1.221,
+      "max_amplitude": 0.41628432273864746
+    }
+  },
+  {
+    "test_id": 9,
+    "noise_type": "firearms_impulse",
+    "input_snr": -5.0,
+    "direct_gtcrn": {
+      "sisdr_db": 7.38,
+      "pesq": 1.305,
+      "max_amplitude": 0.43675902485847473
+    },
+    "esp32_plus_gtcrn": {
+      "sisdr_db": 7.38,
+      "pesq": 1.304,
+      "max_amplitude": 0.43675902485847473
+    }
+  }
+]

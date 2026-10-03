@@ -1,0 +1,34 @@
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Datasets (Large raw and generated audio files)
+data/
+*.wav.part
+
+# Model intermediate / epoch checkpoints (keep best checkpoint and ONNX)
+checkpoints/fine_tuned/gtcrn_epoch_*.tar
+
+# ESP-IDF & C/C++ Build Artifacts
+firmware/esp32s3_front_end/build/
+firmware/esp32s3_front_end/managed_components/
+firmware/esp32s3_front_end/sdkconfig
+
+# External Reference Repo
+gtcrn_repo/
+
+# System / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

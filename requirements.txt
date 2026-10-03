@@ -1,0 +1,11 @@
+torch>=2.0.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+soundfile>=0.12.0
+onnx>=1.14.0
+onnxruntime>=1.15.0
+einops>=0.7.0
+ptflops>=0.7
+pystoi>=0.4.1
+# pesq is optional and requires C compiler build tools on Windows

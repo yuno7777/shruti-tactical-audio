@@ -1,0 +1,54 @@
+{
+  "model_architecture": {
+    "name": "GTCRN",
+    "total_parameters": 48245,
+    "trainable_parameters": 23669,
+    "macs_per_sec": "33.0 MMACs",
+    "sample_rate": 16000,
+    "stft_window": 512,
+    "stft_hop": 256,
+    "frequency_bins": 257,
+    "erb_subbands": 129,
+    "checkpoint_size_kb": 566.2294921875,
+    "onnx_size_kb": 522.646484375
+  },
+  "streaming_cpu_benchmark": {
+    "chunk_frames": 1,
+    "chunk_duration_ms": 16.0,
+    "avg_latency_ms": 1.735023606569052,
+    "p50_latency_ms": 1.6258000000561879,
+    "p95_latency_ms": 2.731590000485084,
+    "max_latency_ms": 3.489599999738857,
+    "rtf": 0.10843897541056575,
+    "ram_mb": 337.609375,
+    "cpu_util_percent": 42.6,
+    "algorithmic_delay_ms": 16.0,
+    "est_model_plus_buffer_p95_ms": 18.731590000485085
+  },
+  "quality_metrics": {
+    "5dB": {
+      "snr_noisy_db": 5.03,
+      "snr_enhanced_db": 7.93,
+      "snr_improvement_db": 2.9,
+      "sisdr_noisy_db": 5.06,
+      "sisdr_enhanced_db": 7.52,
+      "sisdr_improvement_db": 2.46,
+      "stoi_noisy": 0.3396,
+      "stoi_enhanced": 0.3699,
+      "pesq_noisy": 1.102,
+      "pesq_enhanced": 1.166
+    },
+    "10dB": {
+      "snr_noisy_db": 10.03,
+      "snr_enhanced_db": 12.91,
+      "snr_improvement_db": 2.88,
+      "sisdr_noisy_db": 10.04,
+      "sisdr_enhanced_db": 12.71,
+      "sisdr_improvement_db": 2.67,
+      "stoi_noisy": 0.3881,
+      "stoi_enhanced": 0.4104,
+      "pesq_noisy": 1.215,
+      "pesq_enhanced": 1.339
+    }
+  }
+}

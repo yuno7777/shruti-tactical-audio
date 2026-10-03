@@ -1,0 +1,40 @@
+{
+  "defence_validation": {
+    "baseline": {
+      "sisdr_in_db": 7.01,
+      "sisdr_out_db": 13.29,
+      "sisdr_gain_db": 6.28,
+      "avg_stoi": 0.9221,
+      "avg_pesq": 2.244,
+      "num_evaluated": 30
+    },
+    "finetuned": {
+      "sisdr_in_db": 7.01,
+      "sisdr_out_db": 13.6,
+      "sisdr_gain_db": 6.58,
+      "avg_stoi": 0.9233,
+      "avg_pesq": 2.292,
+      "num_evaluated": 30
+    },
+    "improvement_sisdr_db": 0.3
+  },
+  "general_validation": {
+    "baseline": {
+      "sisdr_in_db": 8.0,
+      "sisdr_out_db": 14.86,
+      "sisdr_gain_db": 6.85,
+      "avg_stoi": 0.914,
+      "avg_pesq": 2.128,
+      "num_evaluated": 30
+    },
+    "finetuned": {
+      "sisdr_in_db": 8.0,
+      "sisdr_out_db": 15.04,
+      "sisdr_gain_db": 7.04,
+      "avg_stoi": 0.9189,
+      "avg_pesq": 2.214,
+      "num_evaluated": 30
+    },
+    "retention_delta_sisdr_db": 0.19
+  }
+}

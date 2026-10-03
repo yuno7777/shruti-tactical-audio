@@ -1,0 +1,21 @@
+[Unit]
+Description=GTCRN Tactical Real-Time Speech Enhancement Service
+After=sound.target network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/gtcrn_deploy
+ExecStart=/home/pi/.venv-gtcrn/bin/python /home/pi/gtcrn_deploy/main.py --mode serial --port /dev/ttyUSB0
+Restart=always
+RestartSec=2
+StandardOutput=journal
+StandardError=journal
+
+# Real-time priority scheduling
+Nice=-10
+LimitRTPRIO=95
+LimitMEMLOCK=infinity
+
+[Install]
+WantedBy=multi-user.target
